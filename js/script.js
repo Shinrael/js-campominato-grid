@@ -5,7 +5,7 @@ const container = document.querySelector('.me-container');
 reset();
 
 for(let i = 1; i <= 100; i++){
-  const square = createSquare();
+  const square = createSquare(i);
   container.append(square);
 }
 
@@ -24,8 +24,12 @@ function reset() {
 
 // Creo la funzione per creare il quadrato
 
-function createSquare(){
+function createSquare(numero){
   const sq = document.createElement('div');
-  sq.className = 'square';
+  sq.className = 'square'; 
+
+  sq.addEventListener('click', function(){
+    this.classList.toggle('active');
+  })
   return sq;
 }

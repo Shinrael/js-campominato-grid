@@ -8,4 +8,4 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro e
 1. Salvo il container in una const
 2. Creo il reset
 3. Creo un ciclo con for di 100 ripetizioni e per ogni ciclo verrà creato un quadrato (<div.square>) tramite una function e aggiunto alla griglia.
-4. All'interno del quadrato inserirò il suo valore rappresentato dal numero con un click tramite un eventListener.
+4. Nella funzione di creazione del quadrato aggiungo un eventListener per cambiare il colore del quadrato cliccandoci sopra.
