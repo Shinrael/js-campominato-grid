@@ -1,0 +1,21 @@
+.main-wrapper{
+  height: 100vh;
+  background-color: lightcyan;
+}
+
+.me-container{
+  width: 800px;
+  aspect-ratio: 1;
+  background-color: firebrick;
+}
+
+.square{
+  width: 80px;
+  height: 80px;
+  background-color: darkblue;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
