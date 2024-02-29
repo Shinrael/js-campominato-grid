@@ -1,12 +1,12 @@
 .main-wrapper{
   height: 100vh;
-  background-color: rgb(32, 181, 181);
+  background-color: darkgray;
 }
 
 .me-container{
   width: 800px;
   aspect-ratio: 1;
-  background-color: rgb(32, 181, 181);
+  background-color: darkgray;
 }
 
 .square{
