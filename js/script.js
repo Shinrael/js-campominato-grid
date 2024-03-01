@@ -1,11 +1,15 @@
-// Creo la const del container
+// Creo la const del container e del button reset
 
 const container = document.querySelector('.me-container');
 const btnReset = document.getElementById('btn-reset');
 
+// Aggiungo al bottone l'evento del reset
+
 btnReset.addEventListener('click', function(){
   reset();
-})     
+})    
+
+// Inserisco i quadrati nel container attraverso la function
 
 for(let i = 1; i <= 100; i++){
   const square = createSquare(i);
@@ -33,7 +37,10 @@ function createSquare(numero){
   sq.className = 'square'; 
 
   sq.addEventListener('click', function(){
-    this.classList.toggle('active');
+    // Aggiungiamo la classe active a ciò che clicchiamo e vediamo tramite la console a che numero corrisponde
+    
+    this.classList.add('active');
+    console.log(numero);
   })
   return sq;
 }
